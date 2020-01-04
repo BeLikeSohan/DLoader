@@ -38,15 +38,15 @@ _vala_main (gchar** args,
 	gint result = 0;
 	Application* app = NULL;
 	Application* _tmp0_;
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/main.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/main.vala"
 	_tmp0_ = application_new ();
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/main.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/main.vala"
 	app = _tmp0_;
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/main.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/main.vala"
 	result = g_application_run ((GApplication*) app, args_length1, args);
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/main.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/main.vala"
 	_g_object_unref0 (app);
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/main.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/main.vala"
 	return result;
 #line 52 "main.c"
 }
@@ -56,7 +56,7 @@ int
 main (int argc,
       char ** argv)
 {
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/main.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/main.vala"
 	return _vala_main (argv, argc);
 #line 62 "main.c"
 }

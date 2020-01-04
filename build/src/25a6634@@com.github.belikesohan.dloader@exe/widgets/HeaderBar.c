@@ -81,11 +81,11 @@ my_app_widgets_header_bar_construct (GType object_type,
                                      MyAppWindowsMainWindow* window)
 {
 	MyAppWidgetsHeaderBar * self = NULL;
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_return_val_if_fail (window != NULL, NULL);
-#line 4 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 4 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	self = (MyAppWidgetsHeaderBar*) g_object_new (object_type, "main-window", window, NULL);
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	return self;
 #line 91 "HeaderBar.c"
 }
@@ -94,7 +94,7 @@ my_app_widgets_header_bar_construct (GType object_type,
 MyAppWidgetsHeaderBar*
 my_app_widgets_header_bar_new (MyAppWindowsMainWindow* window)
 {
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	return my_app_widgets_header_bar_construct (MY_APP_WIDGETS_TYPE_HEADER_BAR, window);
 #line 100 "HeaderBar.c"
 }
@@ -105,13 +105,13 @@ my_app_widgets_header_bar_get_main_window (MyAppWidgetsHeaderBar* self)
 {
 	MyAppWindowsMainWindow* result;
 	MyAppWindowsMainWindow* _tmp0_;
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp0_ = self->priv->_main_window;
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	result = _tmp0_;
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	return result;
 #line 117 "HeaderBar.c"
 }
@@ -120,7 +120,7 @@ my_app_widgets_header_bar_get_main_window (MyAppWidgetsHeaderBar* self)
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	return self ? g_object_ref (self) : NULL;
 #line 126 "HeaderBar.c"
 }
@@ -130,19 +130,19 @@ static void
 my_app_widgets_header_bar_set_main_window (MyAppWidgetsHeaderBar* self,
                                            MyAppWindowsMainWindow* value)
 {
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_return_if_fail (self != NULL);
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	if (my_app_widgets_header_bar_get_main_window (self) != value) {
 #line 138 "HeaderBar.c"
 		MyAppWindowsMainWindow* _tmp0_;
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		_tmp0_ = _g_object_ref0 (value);
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		_g_object_unref0 (self->priv->_main_window);
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		self->priv->_main_window = _tmp0_;
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		g_object_notify_by_pspec ((GObject *) self, my_app_widgets_header_bar_properties[MY_APP_WIDGETS_HEADER_BAR_MAIN_WINDOW_PROPERTY]);
 #line 148 "HeaderBar.c"
 	}
@@ -205,193 +205,193 @@ my_app_widgets_header_bar_constructor (GType type,
 	GtkButton* _tmp36_;
 	GtkButton* _tmp37_;
 	GtkButton* _tmp38_;
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	parent_class = G_OBJECT_CLASS (my_app_widgets_header_bar_parent_class);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	obj = parent_class->constructor (type, n_construct_properties, construct_properties);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, MY_APP_WIDGETS_TYPE_HEADER_BAR, MyAppWidgetsHeaderBar);
-#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_header_bar_set_title ((GtkHeaderBar*) self, "DLoader Alpha");
-#line 11 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 11 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_header_bar_set_subtitle ((GtkHeaderBar*) self, "Download PUBGLite.exe at 3.4MB/s");
-#line 12 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 12 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_header_bar_set_show_close_button ((GtkHeaderBar*) self, TRUE);
-#line 14 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 14 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp0_ = (GtkStackSwitcher*) gtk_stack_switcher_new ();
-#line 14 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 14 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp0_);
-#line 14 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 14 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	stack_switcher = _tmp0_;
-#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp1_ = stack_switcher;
-#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp2_ = self->priv->_main_window;
-#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp3_ = my_app_windows_main_window_get_page_stack (_tmp2_);
-#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp4_ = _tmp3_;
-#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 15 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_stack_switcher_set_stack (_tmp1_, _tmp4_);
-#line 17 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 17 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp5_ = stack_switcher;
-#line 17 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 17 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_header_bar_set_custom_title ((GtkHeaderBar*) self, (GtkWidget*) _tmp5_);
-#line 19 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 19 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp6_ = (GtkModelButton*) gtk_model_button_new ();
-#line 19 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 19 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp6_);
-#line 19 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 19 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	start_dl_btn = _tmp6_;
-#line 20 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 20 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp7_ = start_dl_btn;
-#line 20 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 20 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_set (_tmp7_, "text", "New Download", NULL);
-#line 22 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 22 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp8_ = (GtkModelButton*) gtk_model_button_new ();
-#line 22 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 22 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp8_);
-#line 22 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 22 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	TestButton1 = _tmp8_;
-#line 23 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 23 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp9_ = TestButton1;
-#line 23 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 23 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_set (_tmp9_, "text", "Test", NULL);
-#line 25 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 25 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp10_ = (GtkModelButton*) gtk_model_button_new ();
-#line 25 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 25 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp10_);
-#line 25 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 25 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	TestButton2 = _tmp10_;
-#line 26 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 26 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp11_ = TestButton2;
-#line 26 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 26 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_set (_tmp11_, "text", "Test again", NULL);
-#line 28 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 28 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp12_ = (GtkSeparator*) gtk_separator_new (GTK_ORIENTATION_HORIZONTAL);
-#line 28 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 28 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp12_);
-#line 28 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 28 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	menu_separator = _tmp12_;
-#line 29 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 29 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp13_ = menu_separator;
-#line 29 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 29 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_widget_set_margin_top ((GtkWidget*) _tmp13_, 7);
-#line 31 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 31 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp14_ = (GtkGrid*) gtk_grid_new ();
-#line 31 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 31 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp14_);
-#line 31 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 31 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	menu_grid = _tmp14_;
-#line 32 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 32 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp15_ = menu_grid;
-#line 32 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 32 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_widget_set_margin_bottom ((GtkWidget*) _tmp15_, 3);
-#line 33 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 33 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp16_ = menu_grid;
-#line 33 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 33 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_orientable_set_orientation ((GtkOrientable*) _tmp16_, GTK_ORIENTATION_VERTICAL);
-#line 34 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 34 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp17_ = menu_grid;
-#line 34 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 34 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp18_ = start_dl_btn;
-#line 34 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 34 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_grid_attach (_tmp17_, (GtkWidget*) _tmp18_, 0, 0, 3, 1);
-#line 35 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 35 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp19_ = menu_grid;
-#line 35 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 35 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp20_ = TestButton1;
-#line 35 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 35 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_grid_attach (_tmp19_, (GtkWidget*) _tmp20_, 0, 1, 3, 1);
-#line 36 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 36 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp21_ = menu_grid;
-#line 36 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 36 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp22_ = menu_separator;
-#line 36 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 36 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_grid_attach (_tmp21_, (GtkWidget*) _tmp22_, 0, 2, 3, 1);
-#line 37 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 37 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp23_ = menu_grid;
-#line 37 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 37 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp24_ = TestButton2;
-#line 37 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 37 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_grid_attach (_tmp23_, (GtkWidget*) _tmp24_, 0, 3, 3, 1);
-#line 38 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 38 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp25_ = menu_grid;
-#line 38 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 38 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_widget_show_all ((GtkWidget*) _tmp25_);
-#line 40 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 40 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp26_ = (GtkPopover*) gtk_popover_new (NULL);
-#line 40 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 40 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp26_);
-#line 40 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 40 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	menu = _tmp26_;
-#line 41 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 41 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp27_ = menu;
-#line 41 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 41 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp28_ = menu_grid;
-#line 41 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 41 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_container_add ((GtkContainer*) _tmp27_, (GtkWidget*) _tmp28_);
-#line 43 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 43 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp29_ = (GtkMenuButton*) gtk_menu_button_new ();
-#line 43 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 43 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp29_);
-#line 43 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 43 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	app_menu = _tmp29_;
-#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp30_ = app_menu;
-#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp31_ = (GtkImage*) gtk_image_new_from_icon_name ("open-menu", (GtkIconSize) GTK_ICON_SIZE_LARGE_TOOLBAR);
-#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp31_);
-#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp32_ = _tmp31_;
-#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_button_set_image ((GtkButton*) _tmp30_, (GtkWidget*) _tmp32_);
-#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 44 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (_tmp32_);
-#line 45 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 45 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp33_ = app_menu;
-#line 45 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 45 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp34_ = menu;
-#line 45 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 45 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_menu_button_set_popover (_tmp33_, _tmp34_);
-#line 46 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 46 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp35_ = app_menu;
-#line 46 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 46 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_header_bar_pack_end ((GtkHeaderBar*) self, (GtkWidget*) _tmp35_);
-#line 48 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 48 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp36_ = (GtkButton*) gtk_button_new_from_icon_name ("list-add", (GtkIconSize) GTK_ICON_SIZE_LARGE_TOOLBAR);
-#line 48 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 48 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_ref_sink (_tmp36_);
-#line 48 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 48 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	new_dl_btn = _tmp36_;
-#line 49 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 49 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp37_ = new_dl_btn;
-#line 49 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 49 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_widget_set_valign ((GtkWidget*) _tmp37_, GTK_ALIGN_CENTER);
-#line 50 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 50 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_tmp38_ = new_dl_btn;
-#line 50 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 50 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	gtk_header_bar_pack_end ((GtkHeaderBar*) self, (GtkWidget*) _tmp38_);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (new_dl_btn);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (app_menu);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (menu);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (menu_grid);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (menu_separator);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (TestButton2);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (TestButton1);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (start_dl_btn);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (stack_switcher);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	return obj;
 #line 397 "HeaderBar.c"
 }
@@ -400,19 +400,19 @@ my_app_widgets_header_bar_constructor (GType type,
 static void
 my_app_widgets_header_bar_class_init (MyAppWidgetsHeaderBarClass * klass)
 {
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	my_app_widgets_header_bar_parent_class = g_type_class_peek_parent (klass);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_type_class_add_private (klass, sizeof (MyAppWidgetsHeaderBarPrivate));
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	G_OBJECT_CLASS (klass)->get_property = _vala_my_app_widgets_header_bar_get_property;
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	G_OBJECT_CLASS (klass)->set_property = _vala_my_app_widgets_header_bar_set_property;
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	G_OBJECT_CLASS (klass)->constructor = my_app_widgets_header_bar_constructor;
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	G_OBJECT_CLASS (klass)->finalize = my_app_widgets_header_bar_finalize;
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	g_object_class_install_property (G_OBJECT_CLASS (klass), MY_APP_WIDGETS_HEADER_BAR_MAIN_WINDOW_PROPERTY, my_app_widgets_header_bar_properties[MY_APP_WIDGETS_HEADER_BAR_MAIN_WINDOW_PROPERTY] = g_param_spec_object ("main-window", "main-window", "main-window", MY_APP_WINDOWS_TYPE_MAIN_WINDOW, G_PARAM_STATIC_STRINGS | G_PARAM_READABLE | G_PARAM_WRITABLE | G_PARAM_CONSTRUCT_ONLY));
 #line 418 "HeaderBar.c"
 }
@@ -421,7 +421,7 @@ my_app_widgets_header_bar_class_init (MyAppWidgetsHeaderBarClass * klass)
 static void
 my_app_widgets_header_bar_instance_init (MyAppWidgetsHeaderBar * self)
 {
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	self->priv = MY_APP_WIDGETS_HEADER_BAR_GET_PRIVATE (self);
 #line 427 "HeaderBar.c"
 }
@@ -431,11 +431,11 @@ static void
 my_app_widgets_header_bar_finalize (GObject * obj)
 {
 	MyAppWidgetsHeaderBar * self;
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	self = G_TYPE_CHECK_INSTANCE_CAST (obj, MY_APP_WIDGETS_TYPE_HEADER_BAR, MyAppWidgetsHeaderBar);
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	_g_object_unref0 (self->priv->_main_window);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	G_OBJECT_CLASS (my_app_widgets_header_bar_parent_class)->finalize (obj);
 #line 441 "HeaderBar.c"
 }
@@ -463,19 +463,19 @@ _vala_my_app_widgets_header_bar_get_property (GObject * object,
 {
 	MyAppWidgetsHeaderBar * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, MY_APP_WIDGETS_TYPE_HEADER_BAR, MyAppWidgetsHeaderBar);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	switch (property_id) {
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		case MY_APP_WIDGETS_HEADER_BAR_MAIN_WINDOW_PROPERTY:
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		g_value_set_object (value, my_app_widgets_header_bar_get_main_window (self));
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		break;
 #line 475 "HeaderBar.c"
 		default:
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		break;
 #line 481 "HeaderBar.c"
 	}
@@ -490,19 +490,19 @@ _vala_my_app_widgets_header_bar_set_property (GObject * object,
 {
 	MyAppWidgetsHeaderBar * self;
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, MY_APP_WIDGETS_TYPE_HEADER_BAR, MyAppWidgetsHeaderBar);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 	switch (property_id) {
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		case MY_APP_WIDGETS_HEADER_BAR_MAIN_WINDOW_PROPERTY:
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		my_app_widgets_header_bar_set_main_window (self, g_value_get_object (value));
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		break;
 #line 502 "HeaderBar.c"
 		default:
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/widgets/HeaderBar.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/widgets/HeaderBar.vala"
 		break;
 #line 508 "HeaderBar.c"
 	}

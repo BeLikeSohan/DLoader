@@ -62,9 +62,9 @@ Application*
 application_construct (GType object_type)
 {
 	Application * self = NULL;
-#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 3 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	self = (Application*) g_object_new (object_type, "application-id", "com.github.belikesohan.dloader", "flags", G_APPLICATION_FLAGS_NONE, NULL);
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	return self;
 #line 70 "Application.c"
 }
@@ -73,7 +73,7 @@ application_construct (GType object_type)
 Application*
 application_new (void)
 {
-#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 2 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	return application_construct (TYPE_APPLICATION);
 #line 79 "Application.c"
 }
@@ -85,17 +85,17 @@ application_real_activate (GApplication* base)
 	Application * self;
 	MyAppWindowsMainWindow* window = NULL;
 	MyAppWindowsMainWindow* _tmp0_;
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	self = (Application*) base;
-#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	_tmp0_ = my_app_windows_main_window_new (self);
-#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	g_object_ref_sink (_tmp0_);
-#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 10 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	window = _tmp0_;
-#line 11 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 11 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	gtk_application_add_window ((GtkApplication*) self, (GtkWindow*) window);
-#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 9 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	_g_object_unref0 (window);
 #line 101 "Application.c"
 }
@@ -104,9 +104,9 @@ application_real_activate (GApplication* base)
 static void
 application_class_init (ApplicationClass * klass)
 {
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	application_parent_class = g_type_class_peek_parent (klass);
-#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects]/dLoader/src/Application.vala"
+#line 1 "/media/pikumiu/Virtual Baksho -_-/Lab/Vala Projects/dLoader/src/Application.vala"
 	((GApplicationClass *) klass)->activate = (void (*) (GApplication*)) application_real_activate;
 #line 112 "Application.c"
 }
